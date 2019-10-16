@@ -3,8 +3,18 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type='text/javascript' src='/dwr/engine.js'></script>
+        <script>
+            var pathToDwrServlet = "http://directwebremoting.org/dwr-demo/dwr"; // Path to dwr on foreign domain
+        </script>
     </head>
     <body>
         <h1>Hello World!</h1>
+        
+        
+        <script>
+            Demo._path =  'http://directwebremoting.org/dwr-demo/dwr';
+            Demo.sayHello(name, loadinfo); 
+          </script>
     </body>
 </html>
